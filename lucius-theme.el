@@ -25,7 +25,6 @@
 ;;; Commentary:
 ;;;
 ;;; Code:
-
 (deftheme lucius
   "lucius theme - a vim-lucius port for emacs")
 
@@ -62,6 +61,7 @@
  '(doom-modeline-buffer-path     ((t (:inherit mode-line-emphasis :weight bold))))
  '(doom-modeline-highlight       ((t (:inherit mode-line-emphasis :foreground "#a7d37b" :weight bold))))
  '(doom-modeline-buffer-modified ((t (:inherit doom-modeline-buffer-file))))
+ '(doom-modeline-persp-buffer-not-in-persp ((t (:foreground "#f71919" :weight bold))))
  ;; TODO currently unnecessary, as we already adjust `success'
  ;; '(doom-modeline-info	           ((t (:inherit success :foreground "#a7d37b" :weight normal))))
 
