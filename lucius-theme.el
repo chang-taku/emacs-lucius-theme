@@ -33,14 +33,13 @@
  'lucius
 
  '(cursor              ((t (:background "#99d1ce"))))
- ;; '(default             ((t (:foreground "#bedddb" :background "#1b1b1c"))))
  '(default             ((t (:foreground "#d7d7d7" :background "#303030"))))
  '(minibuffer-prompt   ((t (:foreground "#12a89f" :weight bold))))
  '(escape-glyph        ((t (:foreground "orange"))))
  '(highlight           ((t (:background "#384448"))))
  '(hl-line             ((t (:background "#252a2a"))))
  '(region              ((t (:background "#004870"))))
- '(fringe              ((t (:background "#232828"))))
+ '(fringe              ((t (:background "#303030"))))
  '(shadow              ((t (:foreground "#808080"))))
  '(secondary-selection ((t (:background "#132125"))))
  '(trailing-whitespace ((t (:background "#c74000"))))
@@ -53,11 +52,18 @@
  ;; < emacs 26
  '(linum                    ((t (:inherit default :foreground "#756682" :background "#1e2222"))))
 
- '(mode-line-buffer-id ((t (:weight bold))))
- '(mode-line           ((t (:foreground "#c1eae2" :background "#005555" :box (:line-width 1 :color "#003535")))))
- '(mode-line-inactive  ((t (:foreground "#387a71" :background "#1e2827" :box (:line-width 1 :color "#003535")))))
- ;; '(mode-line           ((t (:foreground "#c1eae2" :background "#005555" :box (:line-width 1 :color "#005555")))))
- ;; '(mode-line-inactive  ((t (:foreground "#387a71" :background "#1e2827" :box (:line-width 1 :color "#004040")))))
+ ;; TODO we change this to adjust the lsp-icon in doom-modeline
+ '(success ((t (:foreground "#a7d37b" :weight normal))))
+
+ '(mode-line-buffer-id           ((t (:weight normal))))
+ '(mode-line-emphasis	           ((t (:weight normal))))
+ '(mode-line					           ((t (:foreground "#c1eae2" :background "#484848"))))
+ '(mode-line-inactive	           ((t (:foreground "#387a71" :background "#383838"))))
+ '(doom-modeline-buffer-path     ((t (:inherit mode-line-emphasis :weight bold))))
+ '(doom-modeline-highlight       ((t (:inherit mode-line-emphasis :foreground "#a7d37b" :weight bold))))
+ '(doom-modeline-buffer-modified ((t (:inherit doom-modeline-buffer-file))))
+ ;; TODO currently unnecessary, as we already adjust `success'
+ ;; '(doom-modeline-info	           ((t (:inherit success :foreground "#a7d37b" :weight normal))))
 
  `(font-lock-comment-face              ((t (:foreground "#808080" :slant italic))))
  `(font-lock-comment-delimiter-face    ((t (:inherit font-lock-comment-face))))
