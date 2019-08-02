@@ -51,19 +51,16 @@
  ;; < emacs 26
  '(linum                    ((t (:inherit default :foreground "#756682" :background "#1e2222"))))
 
- ;; TODO we change this to adjust the lsp-icon in doom-modeline
- '(success ((t (:foreground "#a7d37b" :weight normal))))
-
- '(mode-line-buffer-id           ((t (:weight normal))))
- '(mode-line-emphasis	           ((t (:weight normal))))
- '(mode-line					           ((t (:foreground "#c1eae2" :background "#484848"))))
- '(mode-line-inactive	           ((t (:foreground "#387a71" :background "#383838"))))
- '(doom-modeline-buffer-path     ((t (:inherit mode-line-emphasis :weight bold))))
- '(doom-modeline-highlight       ((t (:inherit mode-line-emphasis :foreground "#a7d37b" :weight bold))))
- '(doom-modeline-buffer-modified ((t (:inherit doom-modeline-buffer-file))))
+ '(mode-line-buffer-id                     ((t (:weight normal))))
+ '(mode-line-emphasis                      ((t (:weight normal))))
+ '(mode-line                               ((t (:foreground "#c1eae2" :background "#484848"))))
+ '(mode-line-inactive                      ((t (:foreground "#387a71" :background "#383838"))))
+ '(doom-modeline-buffer-path               ((t (:inherit mode-line-emphasis :weight bold))))
+ '(doom-modeline-highlight                 ((t (:inherit mode-line-emphasis :foreground "#a7d37b" :weight bold))))
+ '(doom-modeline-buffer-modified           ((t (:inherit doom-modeline-buffer-file))))
  '(doom-modeline-persp-buffer-not-in-persp ((t (:foreground "#f71919" :weight bold))))
- ;; TODO currently unnecessary, as we already adjust `success'
- ;; '(doom-modeline-info	           ((t (:inherit success :foreground "#a7d37b" :weight normal))))
+ '(doom-modeline-lsp-success               ((t (:foreground "#a7d37b" :weight normal))))
+ '(doom-modeline-info                      ((t (:inherit success :foreground "#a7d37b" :weight normal))))
 
  `(font-lock-comment-face              ((t (:foreground "#808080" :slant italic))))
  `(font-lock-comment-delimiter-face    ((t (:inherit font-lock-comment-face))))
@@ -84,9 +81,9 @@
  '(font-lock-warning-face              ((t (:foreground "#cb5a37"))))
 
  ;; These are only applied when the cursor is over the symbol
- ;; '(lsp-face-highlight-textual          ((t (:foreground "#a7d37b"))))
- ;; '(lsp-face-highlight-read          ((t (:foreground "#a7d37b"))))
- ;; '(lsp-face-highlight-write          ((t (:foreground "#a7d37b"))))
+ ;; '(lsp-face-highlight-textual ((t (:foreground "#a7d37b"))))
+ ;; '(lsp-face-highlight-read    ((t (:foreground "#a7d37b"))))
+ ;; '(lsp-face-highlight-write   ((t (:foreground "#a7d37b"))))
 
  '(vertical-border     ((t (:foreground "#758a86"))))
  '(persp-selected-face ((t (:inherit font-lock-function-name-face :weight bold))))
@@ -94,7 +91,7 @@
  '(isearch             ((t (:inverse-video nil :foreground "black" :background "#db7e4c"))))
  '(lazy-highlight      ((t (:foreground "#a0a8b0" :background "#3d464f"))))
 
- `(haskell-type-face    ((t (:foreground "#57b5c1"))))
+ `(haskell-type-face      ((t (:foreground "#57b5c1"))))
  `(haskell-pragma-face    ((t (:foreground "#8ba004" :slant italic))))
  `(purescript-pragma-face ((t (:inherit haskell-pragma-face))))
 
@@ -140,8 +137,8 @@
  '(markdown-header-face-5 ((t (:inherit markdown-header-face :weight regular :foreground "#2da49b"))))
  '(markdown-header-face-6 ((t (:inherit markdown-header-face :weight regular :foreground "#2f8e87"))))
 
- '(company-preview ((t (:inherit default :background "#304540"))))
- '(company-preview-common ((t (:inherit company-preview :slant italic))))
+ '(company-preview                      ((t (:inherit default :background "#304540"))))
+ '(company-preview-common               ((t (:inherit company-preview :slant italic))))
  '(company-tooltip                      ((t (:foreground "#cfe0da" :background "#252525"))))
  '(company-tooltip-annotation           ((t (:foreground "#47bcb3"))))
  '(company-tooltip-annotation-selection ((t (:foreground "#47bcb3"))))
